@@ -10,14 +10,14 @@ Gem::Specification.new do |spec|
   spec.email         = ["damian.finol@gmail.com"]
   spec.summary       = %q{Alexa Ruby Kit}
   spec.description   = %q{Alexa Ruby Kit with examples}
-  spec.homepage      = 'https://github.com/damianFC/alexa-rubykit'
+  spec.homepage      = 'https://github.com/ecl66/alexa-rubykit'
   spec.license       = "MIT"
   spec.files         = Dir['[A-Z]*'] + Dir['lib/**/*'] + Dir['tests/**'] + Dir['bin/**']
   spec.files.reject!   { |fn| fn.include? ".gem" }
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
-  spec.add_runtime_dependency 'bundler', '~> 1.7'
+  spec.add_runtime_dependency 'bundler'
   spec.add_runtime_dependency 'rake'
   spec.add_development_dependency 'rspec', '~> 3.2', '>= 3.2.0'
   spec.add_development_dependency 'rspec-mocks', '~> 3.2', '>= 3.2.0'
