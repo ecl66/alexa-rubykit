@@ -10,7 +10,7 @@ module AlexaRubykit
       raise ArgumentError, 'Intent should exist on an IntentRequest' if @intent.nil?
       @type = 'INTENT_REQUEST'
       @name  = @intent['name']
-      @locale = @intent['locale']
+      @locale = json_request['request']['locale']
       @slots = @intent['slots']
     end
 
