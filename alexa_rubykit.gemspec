@@ -6,10 +6,10 @@ require 'alexa_rubykit/version'
 Gem::Specification.new do |spec|
   spec.name          = "alexa_rubykit"
   spec.version       = AlexaRubykit::VERSION
-  spec.authors       = ["Damian Finol"]
-  spec.email         = ["damian.finol@gmail.com"]
+  spec.authors       = ["Emmanuel Cohen-Laroque"]
+  spec.email         = ["ecl@gardinel.com"]
   spec.summary       = %q{Alexa Ruby Kit}
-  spec.description   = %q{Alexa Ruby Kit with examples}
+  spec.description   = %q{Alexa Ruby Kit forked from damianFC}
   spec.homepage      = 'https://github.com/ecl66/alexa-rubykit'
   spec.license       = "MIT"
   spec.files         = Dir['[A-Z]*'] + Dir['lib/**/*'] + Dir['tests/**'] + Dir['bin/**']

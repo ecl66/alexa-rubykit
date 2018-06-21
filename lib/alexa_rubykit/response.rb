@@ -31,7 +31,7 @@ module AlexaRubykit
       end
       @speech
     end
-    
+
     def add_audio_url(url, token='', offset=0)
       @directives << {
         'type' => 'AudioPlayer.Play',
@@ -43,6 +43,12 @@ module AlexaRubykit
             'offsetInMilliseconds' => offset
           }
         }
+      }
+    end
+
+    def stop_audio_player
+      @directives << {
+        'type' => 'AudioPlayer.Stop'
       }
     end
 
